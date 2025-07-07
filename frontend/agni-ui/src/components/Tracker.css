@@ -1,0 +1,115 @@
+.tracker-container {
+  background-color: #000;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-box {
+  width: 100%;
+  padding: 12px 18px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #1e1e1e;
+  color: #eee;
+  transition: border 0.3s;
+}
+
+.input-box:focus {
+  border-color: #00ffe7;
+  outline: none;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  justify-items: center;
+  width: 100%;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  pointer-events: none;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Glow effect on pressed key */
+.key.glow {
+  background-color: #00ffe7;
+  color: #000;
+  transform: scale(1.1);
+  border: 2px solid #00ffe7;
+  opacity: 1;
+}
+
+/* Optional fade animation (if you want to fade them out smoother) */
+/*
+@keyframes glowFade {
+  0% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.key.glow {
+  animation: glowFade 0.5s forwards;
+}
+*/
+
+.submit-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #00ffe7;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #00ccb8;
+}
+
+.status {
+  color: #0f0;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.nonce {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+
